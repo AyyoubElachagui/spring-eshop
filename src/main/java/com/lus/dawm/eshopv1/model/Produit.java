@@ -17,7 +17,7 @@ import jakarta.persistence.OneToMany;
 public class Produit implements Serializable  {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.UUID)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	public List<LigneCommande> getListLigneCommande() {
 		return listLigneCommande;

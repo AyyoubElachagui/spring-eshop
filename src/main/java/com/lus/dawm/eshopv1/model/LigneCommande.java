@@ -13,7 +13,7 @@ import jakarta.persistence.ManyToOne;
 public class LigneCommande implements Serializable {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.UUID)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private int qte;
 	private double prix;

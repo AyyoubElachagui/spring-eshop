@@ -15,7 +15,7 @@ import jakarta.persistence.OneToOne;
 @Entity
 public class Categorie {
 	@Id
-	@GeneratedValue(strategy = GenerationType.UUID)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String designation;
 	private String description;

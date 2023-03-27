@@ -18,7 +18,7 @@ import jakarta.persistence.OneToOne;
 public class Panier implements Serializable {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.UUID)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	private LocalDateTime dateCreation;
